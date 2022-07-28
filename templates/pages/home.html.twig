@@ -1,17 +1,13 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Hello PagesController!{% endblock %}
-{% block stylesheets %}
-<link rel="stylesheet" href="{{ asset('css/homestyle.css')}}">
-{{ encore_entry_link_tags('app') }}
-{% endblock %}
 
 {% block body %}
 
 <main>
     <h2>Vous cherchez une activité en fonction de la météo?</h2>
 
-    <form>
+    <form action="{{ path('app_results') }}" method="post">
         <div class="formulaire">
             <label for="search-city" class="searchCity">Entrez votre lieu: </label>
             <input type="text" name="searchingCity" placeholder="Rechercher une ville...">
