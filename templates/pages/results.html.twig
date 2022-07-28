@@ -1,9 +1,33 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello PagesController!{% endblock %}
+{% block title %}page resultat
+{% endblock %}
 
 {% block body %}
 
-{# html / html.twig here #}
+	<main>
 
+		<h3 class="title">Dans votre ville:</h3>
+
+		<div class="activite">
+			<div>
+				<h4 class="title">En intérieur</h4>
+				<ul class="list-activite">
+					<li>activité 1</li>
+
+				</ul>
+			</div>
+			<div>
+				<h4 class="title">En extérieur</h4>
+				<ul class="list-activite">
+					<li>activité 1</li>
+
+				</ul>
+			</div>
+		</div>
+
+		<div class="btn-retour">
+			<a href="{{ path('app_home') }}">Retour à l'acueil</a>
+		</div>
+	</main>
 {% endblock %}
