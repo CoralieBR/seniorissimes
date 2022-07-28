@@ -1,0 +1,226 @@
+INSERT INTO `activities`(
+    `name`,
+    `slug`,
+    `temperature_min`,
+    `temperature_max`
+) 
+VALUES (
+    'balade à vélo',
+    'balade',
+    '15',
+    '25'
+);
+INSERT INTO `activities`(
+    `name`,
+    `slug`,
+    `temperature_min`,
+    `temperature_max`
+) 
+VALUES (
+    'jardinage',
+    'jardinage',
+    '15',
+    '30'
+);
+INSERT INTO `activities`(
+    `name`,
+    `slug`,
+    `temperature_max`
+) 
+VALUES (
+    'loisirs créatifs en intérieur',
+    'loisirs',
+    '30'
+);
+INSERT INTO `activities`(
+    `name`,
+    `slug`,
+    `temperature_max`
+) 
+VALUES (
+    'lecture',
+    'lecture',
+    '30'
+);
+INSERT INTO `activities`(
+    `name`,
+    `slug`,
+    `temperature_min`,
+    `temperature_max`
+) 
+VALUES (
+    'marche',
+    'marche',
+    '15',
+    '27'
+);
+
+INSERT INTO `activities`(
+    `name`,
+    `slug`
+) 
+VALUES (
+    'visites de musées et expositions',
+    'visites'
+);
+INSERT INTO `activities`(
+    `name`,
+    `slug`
+) 
+VALUES (
+    'relaxation',
+    'relaxation'
+);
+INSERT INTO `activities`(
+    `name`,
+    `slug`,
+    `temperature_max`
+) 
+VALUES (
+    'cuisine',
+    'cuisine',
+    '30'
+);
+INSERT INTO `activities`(
+    `name`,
+    `slug`,
+    `temperature_min`,
+    `temperature_max`
+) 
+VALUES (
+    'jeux de société',
+    'jeux',
+    '15',
+    '30'
+);
+
+INSERT INTO `weather`(
+    `name`, 
+    `openweather_id`, 
+    `openweather_name`
+) VALUES (
+    'pluie',
+    '5',
+    'rain'
+);
+INSERT INTO `weather`(
+    `name`, 
+    `openweather_id`, 
+    `openweather_name`
+) VALUES (
+    'soleil',
+    '8',
+    'sun'
+);
+
+INSERT INTO `weather_activities`(
+    `weather_id`, 
+    `activities_id`
+) VALUES (
+    (SELECT id FROM weather WHERE name = 'soleil' LIMIT 1),
+    (SELECT id FROM activities WHERE slug = 'balade' LIMIT 1)
+);
+INSERT INTO `weather_activities`(
+    `weather_id`, 
+    `activities_id`
+) VALUES (
+    (SELECT id FROM weather WHERE name = 'soleil' LIMIT 1),
+    (SELECT id FROM activities WHERE slug = 'jardinage'  LIMIT 1)
+);
+INSERT INTO `weather_activities`(
+    `weather_id`, 
+    `activities_id`
+) VALUES (
+    (SELECT id FROM weather WHERE name = 'soleil' LIMIT 1),
+    (SELECT id FROM activities WHERE slug = 'loisirs' LIMIT 1)
+);
+INSERT INTO `weather_activities`(
+    `weather_id`, 
+    `activities_id`
+) VALUES (
+    (SELECT id FROM weather WHERE name = 'pluie' LIMIT 1),
+    (SELECT id FROM activities WHERE slug = 'loisirs' LIMIT 1)
+);
+
+INSERT INTO `weather_activities`(
+    `weather_id`, 
+    `activities_id`
+) VALUES (
+    (SELECT id FROM weather WHERE name = 'soleil' LIMIT 1),
+    (SELECT id FROM activities WHERE slug = 'lecture' LIMIT 1)
+);
+INSERT INTO `weather_activities`(
+    `weather_id`, 
+    `activities_id`
+) VALUES (
+    (SELECT id FROM weather WHERE name = 'pluie' LIMIT 1),
+    (SELECT id FROM activities WHERE slug = 'lecture' LIMIT 1)
+);
+
+INSERT INTO `weather_activities`(
+    `weather_id`, 
+    `activities_id`
+) VALUES (
+    (SELECT id FROM weather WHERE name = 'soleil' LIMIT 1),
+    (SELECT id FROM activities WHERE slug = 'marche' LIMIT 1)
+);
+
+INSERT INTO `weather_activities`(
+    `weather_id`, 
+    `activities_id`
+) VALUES (
+    (SELECT id FROM weather WHERE name = 'soleil' LIMIT 1),
+    (SELECT id FROM activities WHERE slug = 'visites' LIMIT 1)
+);
+INSERT INTO `weather_activities`(
+    `weather_id`, 
+    `activities_id`
+) VALUES (
+    (SELECT id FROM weather WHERE name = 'pluie' LIMIT 1),
+    (SELECT id FROM activities WHERE slug = 'visites' LIMIT 1)
+);
+
+INSERT INTO `weather_activities`(
+    `weather_id`, 
+    `activities_id`
+) VALUES (
+    (SELECT id FROM weather WHERE name = 'soleil' LIMIT 1),
+    (SELECT id FROM activities WHERE slug = 'relaxation' LIMIT 1)
+);
+INSERT INTO `weather_activities`(
+    `weather_id`, 
+    `activities_id`
+) VALUES (
+    (SELECT id FROM weather WHERE name = 'pluie' LIMIT 1),
+    (SELECT id FROM activities WHERE slug = 'relaxation' LIMIT 1)
+);
+
+INSERT INTO `weather_activities`(
+    `weather_id`, 
+    `activities_id`
+) VALUES (
+    (SELECT id FROM weather WHERE name = 'soleil' LIMIT 1),
+    (SELECT id FROM activities WHERE slug = 'cuisine' LIMIT 1)
+);
+INSERT INTO `weather_activities`(
+    `weather_id`, 
+    `activities_id`
+) VALUES (
+    (SELECT id FROM weather WHERE name = 'pluie' LIMIT 1),
+    (SELECT id FROM activities WHERE slug = 'cuisine' LIMIT 1)
+);
+
+INSERT INTO `weather_activities`(
+    `weather_id`, 
+    `activities_id`
+) VALUES (
+    (SELECT id FROM weather WHERE name = 'soleil' LIMIT 1),
+    (SELECT id FROM activities WHERE slug = 'jeux' LIMIT 1)
+);
+INSERT INTO `weather_activities`(
+    `weather_id`, 
+    `activities_id`
+) VALUES (
+    (SELECT id FROM weather WHERE name = 'pluie' LIMIT 1),
+    (SELECT id FROM activities WHERE slug = 'jeux' LIMIT 1)
+);

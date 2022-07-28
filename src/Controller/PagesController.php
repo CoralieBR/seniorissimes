@@ -14,7 +14,7 @@ class PagesController extends AbstractController
     public function home(): Response
     {
         return $this->render('pages/home.html.twig', [
-            'controller_name' => 'PagesController',
+            'pageName' => 'home',
         ]);
     }
 
@@ -24,7 +24,7 @@ class PagesController extends AbstractController
     public function results(): Response
     {
         return $this->render('pages/results.html.twig', [
-            'controller_name' => 'PagesController',
+            'pageName' => 'results',
         ]);
     }
 
@@ -34,7 +34,7 @@ class PagesController extends AbstractController
     public function contact(): Response
     {
         return $this->render('pages/contact.html.twig', [
-            'controller_name' => 'PagesController',
+            'pageName' => 'contact',
         ]);
     }
 }
