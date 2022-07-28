@@ -4,8 +4,16 @@
 
 {% block body %}
 
-<h2>TEST</h2>
+<main>
+    <h2>Vous cherchez une activité en fonction de la météo?</h2>
 
-{# html / html.twig here #}
+    <div class="formulaire">
+        <form>
+            <label for="search-city" class="searchCity">Entrez votre lieu:</label>
+            <input type="text" name="searchingCity" placeholder="Rechercher une ville...">
+            <button type="submit" class="btnpublish">Go!</button>  
+    </div>
+</main>
+
 
 {% endblock %}

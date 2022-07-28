@@ -1,0 +1,46 @@
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 40rem;
+    background-color: #FFEA53;
+}
+
+h2 {
+    margin: 30px 0 50px 0;
+    color: #009200;
+}
+
+.searchCity {
+    color: #009200;
+}
+
+input {
+    height: 40px;
+    width: 100%;
+    margin-top: 0.33rem;
+    margin-bottom: 1rem;
+    outline: none;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    margin: 20px 0 20px 0;
+    background-color: #009200;
+    color:#FFEA53;
+  }
+
+  .btnpublish {
+    background-color: #009200;
+    color: #FFEA53;
+    border: none;
+    border-radius: 25%;
+    padding: 0.5rem;
+  }
+
+  .btnpublish:hover {
+    background-color: lightskyblue;
+  }
+
+  ::placeholder {
+    color: #FFEA53;
+  }
