@@ -4,6 +4,36 @@
 
 {% block body %}
 
-{# html / html.twig here #}
+ <main>
+
+    <h2>Formulaire de contact </h2>
+
+    <form>
+        <div class="formulaire">
+            <div class="nameForm">
+            <label for="contactName" class="nameContact">Nom: </label>
+            <input type="text" name="formName" placeholder="Entrer votre nom">
+            </div>
+
+            <div class="mailForm">
+            <label for="contactMail" class="mailContact">Email: </label>
+            <input type="text" name="formmail" placeholder="Entrer votre mail">
+            </div>
+
+            <div class="subjectForm">
+            <label for="contactSubject" class="subjectContact">Sujet: </label>
+            <input type="text" name="formsubject" placeholder="Sujet du message">
+            </div>
+
+            <div class="messageForm">
+            <label for="contactMessage" class="messageContact">Votre message: </label>
+            <textarea placeholder="Votre message ici"></textarea>
+            </div>
+
+            <button type="submit" class="btnsend">Envoyer mon message</button>  
+        </div>
+    </form>
+
+ </main>
 
 {% endblock %}

@@ -29,7 +29,7 @@ input {
     color:#FFEA53;
   }
 
-  .btnpublish {
+  .btnsearch {
     background-color: #009200;
     color: #FFEA53;
     border: none;
@@ -37,7 +37,7 @@ input {
     padding: 0.5rem;
   }
 
-  .btnpublish:hover {
+  .btnsearch:hover {
     background-color: lightskyblue;
   }
 
