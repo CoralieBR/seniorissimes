@@ -7,6 +7,7 @@
         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
         {% block stylesheets %}
             <link rel="stylesheet" href="{{ asset('css/styles.css')}}">
+            <link rel="stylesheet" href="{{ asset('css/homestyle.css')}}">
             {{ encore_entry_link_tags('app') }}
         {% endblock %}
 
@@ -15,10 +16,18 @@
         {% endblock %}
     </head>
     <body>
-        {# header here #}
+
+        <nav class="nav">
+            <div class="menu">
+                <a class="logo">SENIORISSIMES</a>
+            </div>
+        </nav>
 
         {% block body %}{% endblock %}
 
-        {# footer here #}
+        <footer class="footer">
+        <p class="remerciements">Coralie, Banafsheh, Benjamin</p>
+        </footer>
+
     </body>
 </html>
