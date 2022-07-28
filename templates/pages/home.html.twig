@@ -1,6 +1,10 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Hello PagesController!{% endblock %}
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('css/homestyle.css')}}">
+{{ encore_entry_link_tags('app') }}
+{% endblock %}
 
 {% block body %}
 

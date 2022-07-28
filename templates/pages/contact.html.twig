@@ -1,6 +1,10 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Hello PagesController!{% endblock %}
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('css/contactstyle.css')}}">
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
 
 {% block body %}
 
@@ -17,7 +21,7 @@
 
             <div class="mailForm">
             <label for="contactMail" class="mailContact">Email: </label>
-            <input type="text" name="formmail" placeholder="Entrer votre mail">
+            <input type="mail" name="formmail" placeholder="Entrer votre mail">
             </div>
 
             <div class="subjectForm">
@@ -30,7 +34,9 @@
             <textarea placeholder="Votre message ici"></textarea>
             </div>
 
+            <div class="btnsending">
             <button type="submit" class="btnsend">Envoyer mon message</button>  
+            </div>
         </div>
     </form>
 
