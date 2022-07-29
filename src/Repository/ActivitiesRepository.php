@@ -54,6 +54,26 @@ class ActivitiesRepository extends ServiceEntityRepository
 //        ;
 //    }
 
+    public function findByTemperature($tempMin, $tempMax): array
+    {
+        $query = $this->getEntityManager()->createQuery('
+            SELECT a
+            FROM App\ENtity\Activities a
+            WHERE (
+                a.temperature_min <= :tempMin
+                OR a.temperature_min IS NULL
+            ) AND (
+                a.temperature_max >= :tempMax
+                OR a.temperature_max IS NULL
+            )
+        ');
+        $query->setParameters(array(
+            'tempMin' => $tempMin,
+            'tempMax' => $tempMax,
+        ));
+        return $query->getResult();        
+    }
+
 //    public function findOneBySomeField($value): ?Activities
 //    {
 //        return $this->createQueryBuilder('a')
