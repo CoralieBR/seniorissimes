@@ -44,6 +44,11 @@ class Activities
      */
     private $weather;
 
+    /**
+     * @ORM\Column(type="boolean", nullable=true)
+     */
+    private $outdoors;
+
     public function __construct()
     {
         $this->weather = new ArrayCollection();
@@ -125,6 +130,18 @@ class Activities
         if ($this->weather->removeElement($weather)) {
             $weather->removeActivity($this);
         }
+
+        return $this;
+    }
+
+    public function isOutdoors(): ?bool
+    {
+        return $this->outdoors;
+    }
+
+    public function setOutdoors(?bool $outdoors): self
+    {
+        $this->outdoors = $outdoors;
 
         return $this;
     }
