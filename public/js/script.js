@@ -12,7 +12,9 @@ function changecolor() {
     let hometitle = document.getElementById("hometitle");
     let labelhome = document.getElementById("labelhome");
     let inputhome = document.getElementById("inputhome");
+    let btnsearch = document.getElementById("btnsearch");
     let footermain = document.getElementById("footermain");
+    let remerciements = document.getElementById("remerciements");
     if(choix == true) {
         navmain.style.backgroundColor = "#00A8A4";
         navmenumain.style.backgroundColor = "#A88E08";
@@ -27,7 +29,11 @@ function changecolor() {
         hometitle.style.color = "#00A8A4";
         labelhome.style.color ="#00A8A4";
         inputhome.style.backgroundColor ="#00A8A4";
+        btnsearch.style.backgroundColor = "#00A8A4";
+        btnsearch.style.color = "#A88E08";
         footermain.style.backgroundColor = "#00A8A4";
+        remerciements.style.backgroundColor = "#A88E08";
+        remerciements.style.color = "#00A8A4";
         choix = false;
     } else {
         navmain.style.backgroundColor = "#A88E08";
@@ -43,7 +49,11 @@ function changecolor() {
         hometitle.style.color = "#A88E08";
         labelhome.style.color ="#A88E08";
         inputhome.style.backgroundColor ="#A88E08";
+        btnsearch.style.backgroundColor = "#A88E08";
+        btnsearch.style.color = "#A82108";
         footermain.style.backgroundColor = "#A88E08";
+        remerciements.style.backgroundColor = "#A82108";
+        remerciements.style.color = "#A88E08";
         choix = true;
     }
 };
@@ -61,6 +71,7 @@ function resetcolor() {
     let labelhome = document.getElementById("labelhome");
     let inputhome = document.getElementById("inputhome");
     let footermain = document.getElementById("footermain");
+    let remerciements = document.getElementById("remerciements");
     if(choix == true) {
         navmain.style.backgroundColor = "#009200";
         navmenumain.style.backgroundColor = "#FFEA53";
@@ -75,7 +86,11 @@ function resetcolor() {
         hometitle.style.color = "#009200";
         labelhome.style.color = "#009200";
         inputhome.style.backgroundColor = "#009200";
+        btnsearch.style.backgroundColor = "#009200";
+        btnsearch.style.color = "#FFEA53";
         footermain.style.backgroundColor = "#009200";
+        remerciements.style.backgroundColor = "#FFEA53";
+        remerciements.style.color = "#009200";
         choix = false;
     } else {
         console.log("already reset");
