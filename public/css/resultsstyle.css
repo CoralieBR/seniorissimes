@@ -8,6 +8,7 @@
     color: #FFEA53;
     font-size: 1.5rem;
     margin-top: 6rem;
+    text-align: center;
   }
 
   
@@ -19,7 +20,7 @@
     margin: 158px 0 20px 3rem;
     background-color: #009200;
     color: #FFEA53;
-    width: 7%;
+    /*width: 7%;*/
     margin-inline-end: auto;
     text-align: center;
 }
@@ -27,7 +28,9 @@
 .activite {
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 100%;
+    padding-left: 8rem;
+    padding-right: 8rem;
     
 }
 
@@ -43,6 +46,12 @@ main {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 40rem;
     background-color: #FFEA53;
+}
+
+.text {
+    color: #009200;
+    font-size: 1.3rem; 
+    font-weight: 600;
+    text-transform: capitalize;
 }
