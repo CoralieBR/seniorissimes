@@ -59,3 +59,12 @@
     padding: 1.5rem;
     color: #009200;
   }
+
+  .contact {
+    padding-right: 5rem;
+    font-size: 1.75rem;
+}
+
+.contact a {
+  color:#FFEA53;
+}
