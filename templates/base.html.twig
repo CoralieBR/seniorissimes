@@ -19,21 +19,24 @@
 		{% block javascripts %}
 			{{ encore_entry_script_tags('app') }}
 		{% endblock %}
+			<script src="{{ asset('js/script.js')}}"></script>
 	</head>
 	<body>
 
-		<nav class="nav">
-			<div class="menu">
-				<a href="{{ path('app_home') }}" class="logo">SENIORISSIMES</a>
+		<nav class="nav" id="navmain">
+			<div class="menu" id="navmenumain">
+				<a href="{{ path('app_home') }}" class="logo" id="navlogomain">SENIORISSIMES</a>
 			</div>
-			<div class="contact">
-				<a href="{{ path('app_contact') }}">Contact</a>
+			<div class="contact" id="navcontactmain">
+				<a href="{{ path('app_contact') }}" class="liencontact" id="navcontactbtn">Contact</a>
 			</div>
+			<button class="btnchangecolor" id="btncolor" onclick="changecolor()">Changer les couleurs</button>
+			<button class="btnresetcolor" id="btnreset" onclick="resetcolor()">Remettre les couleurs</button>
 		</nav>
 
 		{% block body %}{% endblock %}
 
-		<footer class="footer">
+		<footer class="footer" id="footermain">
 			<p class="remerciements">Coralie, Banafsheh, Benjamin</p>
 		</footer>
 
