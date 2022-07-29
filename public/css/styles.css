@@ -60,11 +60,66 @@
     color: #009200;
   }
 
-  .contact {
-    padding-right: 5rem;
-    font-size: 1.75rem;
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FFEA53;
+  padding: 0.5rem;
+  margin: 0 50px;
+  border: none;
+  border-radius: 20px;
 }
 
-.contact a {
-  color:#FFEA53;
+.liencontact {
+  color: #009200;
+}
+
+.btnchangecolor {
+  font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    margin-right: 5rem;
+    max-width: 7.5rem;
+    padding: 1rem;
+    background-color: transparent;
+    color: #FFEA53;
+    border: solid;
+    border-color: #FFEA53;
+    border-radius: 2px;
+}
+
+.btnchangecolor:hover {
+  background-color: transparent;
+  color: lightskyblue;
+  border: solid;
+  border-color: lightskyblue;
+  border-radius: 2px;
+}
+
+.btnresetcolor {
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  margin-right: 5rem;
+  max-width: 7.5rem;
+  padding: 1rem;
+  background-color: transparent;
+  color: #FFEA53;
+  border: solid;
+  border-color: #FFEA53;
+  border-radius: 2px;
+}
+
+.btnresetcolor:hover {
+  background-color: transparent;
+  color: lightskyblue;
+  border: solid;
+  border-color: lightskyblue;
+  border-radius: 2px;
 }

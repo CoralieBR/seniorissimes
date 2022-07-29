@@ -29,15 +29,15 @@ input {
     color:#FFEA53;
   }
 
-  .btnpublish {
+  .btnsearch {
     background-color: #009200;
     color: #FFEA53;
     border: none;
     border-radius: 25%;
-    padding: 0.5rem;
+    padding: 1rem;
   }
 
-  .btnpublish:hover {
+  .btnsearch:hover {
     background-color: lightskyblue;
   }
 
