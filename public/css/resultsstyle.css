@@ -6,7 +6,7 @@
     margin: 20px 0 20px 0;
     background-color: #009200;
     color: #FFEA53;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: 6rem;
   }
 
@@ -16,17 +16,19 @@
     margin-bottom: 1rem;
     outline: none;
     padding: 5px;
-    border: none;
-    margin: 20px 0 20px 0;
+    margin: 158px 0 20px 3rem;
     background-color: #009200;
     color: #FFEA53;
+    width: 7%;
+    margin-inline-end: auto;
+    text-align: center;
 }
 
 .activite {
     display: flex;
     justify-content: space-between;
-    width: 40%;
-    margin: auto;
+    width: 50%;
+    
 }
 
 ul.list-activite {
